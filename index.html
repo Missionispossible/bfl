@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>BFL - Authentic Indian Flavors</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+<body>
+    <!-- Header Section -->
+    <header id="main-header" class="fixed top-0 left-0 w-full bg-white/80 backdrop-blur-sm shadow-md z-50 transition-all duration-300">
+        <div class="w-full px-4 md:px-8 flex justify-between items-center py-3">
+            <div class="flex items-center">
+                <a href="#home">
+                    <img src="assets/logo/BFL Logo.png" alt="BFL Logo" class="h-12 md:h-16 transition-all duration-300">
+                </a>
+            </div>
+            <nav class="hidden lg:flex items-center space-x-8">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#products" class="nav-link">Products</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+            <div class="lg:hidden">
+                <button id="mobile-menu-button" class="text-gray-800 hover:text-primary focus:outline-none">
+                    <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-white/95">
+            <nav class="px-4 pt-2 pb-4 space-y-2">
+                <a href="#home" class="block nav-link text-center py-2">Home</a>
+                <a href="#about" class="block nav-link text-center py-2">About</a>
+                <a href="#products" class="block nav-link text-center py-2">Products</a>
+                <a href="#contact" class="block nav-link text-center py-2">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-image w-full h-screen flex items-center justify-center text-white relative overflow-hidden">
+        <div class="w-full px-4 md:px-8 z-10">
+            <div class="max-w-3xl mx-auto text-center fade-in" data-aos="fade-up" data-aos-duration="1000">
+                <h1 class="text-4xl md:text-6xl font-bold mb-6">Taste the Authentic Flavors of India</h1>
+                <p class="text-lg md:text-xl mb-8">BFL brings you premium quality spices, sweets, and snacks sourced directly from the heart of India. Our products preserve traditional recipes while meeting modern quality standards.</p>
+                <a href="#products" class="primary-btn btn text-lg inline-block" data-aos="zoom-in" data-aos-delay="300">Explore Products</a>
+            </div>
+        </div>
+        <!-- <div class="absolute bottom-8 left-1/2 -translate-x-1/2">
+            <a href="#about" class="scroll-down-arrow">
+                <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+            </a>
+        </div> -->
+        <div class="absolute bottom-0 left-0 w-full h-16 bg-gradient-to-t from-black/50 to-transparent"></div>
+    </section>
+
+    <!-- Worldwide Branch Section -->
+    <section class="py-12 md:py-16 bg-gray-50">
+        <div class="container mx-auto px-4 md:px-8">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-10" data-aos="fade-up">
+                <span class="section-title">Our Global Presence</span>
+            </h2>
+            <p class="text-lg text-center max-w-3xl mx-auto mb-20" data-aos="fade-up" data-aos-delay="100">With a strong commitment to bringing authentic Indian flavors to the world, BFL has established a network of offices and distribution centers. Our products are now available in over gulf regions ensuring that the rich culinary heritage of India reaches food enthusiasts worldwide.</p>
+
+            <div class="max-w-5xl mx-auto bg-white rounded-2xl shadow-xl overflow-hidden" data-aos="fade-up" data-aos-delay="200">
+                <div class="grid md:grid-cols-2">
+                    <!-- Headquarters -->
+                    <div class="p-8 md:p-12">
+                        <div class="flex items-center mb-6">
+                            <div class="flex-shrink-0">
+                                <div class="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center">
+                                     <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                                </div>
+                            </div>
+                            <div class="ml-5">
+                                <h3 class="text-2xl font-bold text-gray-800">Headquarters</h3>
+                                <p class="text-md text-gray-500">Main Office</p>
+                            </div>
+                        </div>
+                        <div>
+                            <p class="text-lg text-gray-700 font-medium">Kalpetta, Wayanad</p>
+                            <p class="text-gray-500">Kerala, India</p>
+                        </div>
+                    </div>
+
+                    <!-- Gulf Presence -->
+                    <div class="p-8 md:p-12 bg-gray-50/50 md:border-l border-gray-200">
+                         <div class="flex items-center mb-6">
+                            <div class="flex-shrink-0">
+                                <div class="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center">
+                                    <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2h8a2 2 0 002-2v-1a2 2 0 012-2h1.945M7.8 15.2l.5-2.8M16.2 15.2l-.5-2.8M12 22a10 10 0 100-20 10 10 0 000 20z"></path></svg>
+                                </div>
+                            </div>
+                            <div class="ml-5">
+                                <h3 class="text-2xl font-bold text-gray-800">Gulf Region</h3>
+                                <p class="text-md text-gray-500">Distribution Network</p>
+                            </div>
+                        </div>
+                        <div class="grid grid-cols-2 gap-x-6 gap-y-4">
+                            <p class="text-lg text-gray-700">Bahrain</p>
+                            <p class="text-lg text-gray-700">Saudi Arabia</p>
+                            <p class="text-lg text-gray-700">Oman</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="py-12 md:py-16 bg-white">
+        <div class="container mx-auto px-4 md:px-8">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16" data-aos="fade-up">
+                <span class="section-title">About BFL</span>
+            </h2>
+            <div class="flex flex-col md:flex-row items-center gap-8 md:gap-16">
+                <div class="w-full md:w-1/2" data-aos="fade-right" data-aos-delay="200">
+                    <img src="assets/logo/BFL Logo.png" alt="BFL Company" class="w-full max-w-md mx-auto">
+                </div>
+                <div class="w-full md:w-1/2" data-aos="fade-left" data-aos-delay="400">
+                    <h3 class="text-2xl font-bold text-primary mb-4">Crafting Authentic Tastes Since 2014</h3>
+                    <p class="text-lg text-gray-700 mb-4 text-justify">
+                        BFL has been a pioneer in bringing the authentic and rich flavors of India to the world. Our journey began in 2014 with a small, family-run spice mill, driven by a passion for quality and tradition.
+                    </p>
+                    <p class="text-lg text-gray-700 text-justify">
+                        Today, we are a global brand, but our core values remain unchanged. We are committed to sourcing the finest ingredients, preserving age-old recipes, and using modern technology to ensure that every product that reaches your kitchen is pure, fresh, and full of flavor.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Showcase Section -->
+    <section id="products" class="py-12 md:py-16 bg-gradient-to-b from-white to-orange-50">
+        <div class="container mx-auto px-4 md:px-8">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16" data-aos="fade-up">
+                <span class="section-title">Our Products</span>
+            </h2>
+            
+            <div class="flex justify-center mb-12" data-aos="fade-up" data-aos-delay="200">
+                <div class="w-full overflow-x-auto">
+                    <div class="flex space-x-2 md:space-x-4 flex-nowrap justify-start sm:justify-center">
+                        <div class="product-category active px-4 py-2 font-medium text-lg whitespace-nowrap" data-category="spices">Spices</div>
+                        <div class="product-category px-4 py-2 font-medium text-lg whitespace-nowrap" data-category="candy">Candy</div>
+                        <div class="product-category px-4 py-2 font-medium text-lg whitespace-nowrap" data-category="snacks">Snacks</div>
+                        <div class="product-category px-4 py-2 font-medium text-lg whitespace-nowrap" data-category="OtherCategory">Others</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Spices Category -->
+            <div class="product-grid" id="spices">
+                <div class="product-item" data-aos="fade-up">
+                    <div class="product-badge">Best Seller</div>
+                    <div class="product-image">
+                        <img src="assets/spices/Chilli Powder.png" alt="Chilli Powder" class="w-full h-full object-cover">
+                    </div>
+                    <div class="product-details">
+                        <h3 class="product-name">Chilli Powder</h3>
+                    </div>
+                </div>
+                <div class="product-item" data-aos="fade-up" data-aos-delay="100">
+                    <div class="product-badge">Popular</div>
+                    <div class="product-image">
+                        <img src="assets/spices/Kashmiri Chilli Powder.png" alt="Kashmiri Chilli Powder" class="w-full h-full object-cover">
+                    </div>
+                    <div class="product-details">
+                        <h3 class="product-name">Kashmiri Chilli Powder</h3>
+                    </div>
+                </div>
+                <div class="product-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="product-badge">New</div>
+                    <div class="product-image">
+                        <img src="assets/spices/Turmeric Powder.png" alt="Turmeric Powder" class="w-full h-full object-cover">
+                    </div>
+                    <div class="product-details">
+                        <h3 class="product-name">Turmeric Powder</h3>
+                    </div>
+                </div>
+                <div class="product-item" data-aos="fade-up" data-aos-delay="300">
+                    <div class="product-badge">Essential</div>
+                    <div class="product-image">
+                        <img src="assets/spices/Coriander Powder.png" alt="Coriander Powder" class="w-full h-full object-cover">
+                    </div>
+                    <div class="product-details">
+                        <h3 class="product-name">Coriander Powder</h3>
+                    </div>
+                </div>
+                <div class="product-item" data-aos="fade-up" data-aos-delay="400">
+                    <div class="product-badge">Aromatic</div>
+                    <div class="product-image">
+                        <img src="assets/spices/Meat Masala.png" alt="Meat Masala" class="w-full h-full object-cover">
+                    </div>
+                    <div class="product-details">
+                        <h3 class="product-name">Meat Masala</h3>
+                    </div>
+                </div>
+                <div class="product-item" data-aos="fade-up" data-aos-delay="500">
+                    <div class="product-badge">Flavorful</div>
+                    <div class="product-image">
+                        <img src="assets/spices/Sambar Powder.png" alt="Sambar Powder" class="w-full h-full object-cover">
+                    </div>
+                    <div class="product-details">
+                        <h3 class="product-name">Sambar Powder</h3>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Snacks Category (Hidden by default) -->
+            <div class="product-grid hidden" id="snacks">
+                <div class="product-item" data-aos="fade-up">
+                    <div class="product-badge">Crunchy</div>
+                    <div class="product-image">
+                        <img src="assets/snacks/Banana Chips.png" alt="Banana Chips" class="w-full h-full object-cover">
+                    </div>
+                    <div class="product-details">
+                        <h3 class="product-name">Banana Chips</h3>
+                    </div>
+                </div>
+                <div class="product-item" data-aos="fade-up" data-aos-delay="100">
+                    <div class="product-badge">Light</div>
+                    <div class="product-image">
+                        <img src="assets/snacks/Milk Rusk.png" alt="Milk Rusk" class="w-full h-full object-cover">
+                    </div>
+                    <div class="product-details">
+                        <h3 class="product-name">Milk Rusk</h3>
+                    </div>
+                </div>
+                <div class="product-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="product-badge">Spicy</div>
+                    <div class="product-image">
+                        <img src="assets/snacks/Payyoli Micher.png" alt="Payyoli Micher" class="w-full h-full object-cover">
+                    </div>
+                    <div class="product-details">
+                        <h3 class="product-name">Payyoli Micher</h3>
+                    </div>
+                </div>
+                <div class="product-item" data-aos="fade-up" data-aos-delay="300">
+                    <div class="product-badge">Savory</div>
+                    <div class="product-image">
+                        <img src="assets/snacks/Peanut Nuts.png" alt="Peanut Nuts" class="w-full h-full object-cover">
+                    </div>
+                    <div class="product-details">
+                        <h3 class="product-name">Peanut Nuts</h3>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Candy Category (Hidden by default) -->
+            <div class="product-grid hidden" id="candy">
+                <div class="product-item" data-aos="fade-up">
+                    <div class="product-badge">Crunchy</div>
+                    <div class="product-image">
+                        <img src="assets/candy/Peanut Candy.png" alt="Peanut Candy" class="w-full h-full object-cover">
+                    </div>
+                    <div class="product-details">
+                        <h3 class="product-name">Peanut Candy</h3>
+                    </div>
+                </div>
+                <div class="product-item" data-aos="fade-up" data-aos-delay="100">
+                    <div class="product-badge">Spicy</div>
+                    <div class="product-image">
+                        <img src="assets/candy/Puli Mittayi.png" alt="Puli Mittayi" class="w-full h-full object-cover">
+                    </div>
+                    <div class="product-details">
+                        <h3 class="product-name">Puli Mittayi</h3>
+                    </div>
+                </div>
+                <div class="product-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="product-badge">Light</div>
+                    <div class="product-image">
+                        <img src="assets/candy/Seasame Candy.png" alt="Seasame Candy" class="w-full h-full object-cover">
+                    </div>
+                    <div class="product-details">
+                        <h3 class="product-name">Seasame Candy</h3>
+                    </div>
+                </div>
+                <div class="product-item" data-aos="fade-up" data-aos-delay="300">
+                    <div class="product-badge">Sweet</div>
+                    <div class="product-image">
+                        <img src="assets/candy/Sona Papdi.png" alt="Sona Papdi" class="w-full h-full object-cover">
+                    </div>
+                    <div class="product-details">
+                        <h3 class="product-name">Sona Papdi</h3>
+                    </div>
+                </div>
+                <div class="product-item" data-aos="fade-up" data-aos-delay="400">
+                    <div class="product-badge">Classic</div>
+                    <div class="product-image">
+                        <img src="assets/candy/Sweet Candy.png" alt="Sweet Candy" class="w-full h-full object-cover">
+                    </div>
+                    <div class="product-details">
+                        <h3 class="product-name">Sweet Candy</h3>
+                    </div>
+                </div>
+                <div class="product-item" data-aos="fade-up" data-aos-delay="500">
+                    <div class="product-badge">Coconut</div>
+                    <div class="product-image">
+                        <img src="assets/candy/CocoValley Sweet Candy.png" alt="CocoValley Sweet Candy" class="w-full h-full object-cover">
+                    </div>
+                    <div class="product-details">
+                        <h3 class="product-name">CocoValley Sweet Candy</h3>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- OtherCategory  (Hidden by default) -->
+            <div class="product-grid hidden" id="OtherCategory">
+                <div class="product-item" data-aos="fade-up">
+                    <div class="product-badge">Crunchy</div>
+                    <div class="product-image">
+                        <img src="assets/othercategory/Bread Crumbs.png" alt="Bread Crumbs" class="w-full h-full object-cover">
+                    </div>
+                    <div class="product-details">
+                        <h3 class="product-name">Bread Crumbs</h3>
+                    </div>
+                </div>
+                <div class="product-item" data-aos="fade-up" data-aos-delay="100">
+                    <div class="product-badge">Sweet</div>
+                    <div class="product-image">
+                        <img src="assets/othercategory/Instant Vermicelli Payasam Mix.png" alt="Vermicelli Payasam Mix" class="w-full h-full object-cover">
+                    </div>
+                    <div class="product-details">
+                        <h3 class="product-name">Instant Vermicelli Payasam Mix</h3>
+                    </div>
+                </div>
+                <div class="product-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="product-badge">Sweet</div>
+                    <div class="product-image">
+                        <img src="assets/othercategory/Jackfruit Seed Payasam Mix.png" alt="Jackfruit Seed Payasam Mix" class="w-full h-full object-cover">
+                    </div>
+                    <div class="product-details">
+                        <h3 class="product-name">Jackfruit Seed Payasam Mix</h3>
+                    </div>
+                </div>
+                <div class="product-item" data-aos="fade-up" data-aos-delay="300">
+                    <div class="product-badge">Healthy</div>
+                    <div class="product-image">
+                        <img src="assets/othercategory/Navara Rice Powder.png" alt="Navara Rice Powder" class="w-full h-full object-cover">
+                    </div>
+                    <div class="product-details">
+                        <h3 class="product-name">Navara Rice Powder</h3>
+                    </div>
+                </div>
+                <div class="product-item" data-aos="fade-up" data-aos-delay="400">
+                    <div class="product-badge">Healthy</div>
+                    <div class="product-image">
+                        <img src="assets/othercategory/Roasted Ragi Powder.png" alt="Roasted Ragi Powder" class="w-full h-full object-cover">
+                    </div>
+                    <div class="product-details">
+                        <h3 class="product-name">Roasted Ragi Powder</h3>
+                    </div>
+                </div>
+                <div class="product-item" data-aos="fade-up" data-aos-delay="500">
+                    <div class="product-badge">Tea Time</div>
+                    <div class="product-image">
+                        <img src="assets/othercategory/Monicca Tea Powder 100g.png" alt="Monicca Tea Powder 100g" class="w-full h-full object-cover">
+                    </div>
+                    <div class="product-details">
+                        <h3 class="product-name">Monicca Tea Powder 100g</h3>
+                    </div>
+                </div>
+                <div class="product-item" data-aos="fade-up" data-aos-delay="600">
+                    <div class="product-badge">Tea Time</div>
+                    <div class="product-image">
+                        <img src="assets/othercategory/Monicca Tea Powder 250g.png" alt="Monicca Tea Powder 250g" class="w-full h-full object-cover">
+                    </div>
+                    <div class="product-details">
+                        <h3 class="product-name">Monicca Tea Powder 250g</h3>
+                    </div>
+                </div>
+                 <div class="product-item" data-aos="fade-up" data-aos-delay="700">
+                    <div class="product-badge">Tea Time</div>
+                    <div class="product-image">
+                        <img src="assets/othercategory/Monicca Tea Powder 3kg.png" alt="Monicca Tea Powder 3kg" class="w-full h-full object-cover">
+                    </div>
+                    <div class="product-details">
+                        <h3 class="product-name">Monicca Tea Powder 3kg</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer / Contact Section -->
+    <footer id="contact" class="bg-gray-900 text-white py-12 md:py-16" data-aos="fade-up">
+        <div class="container mx-auto px-4 md:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-center" data-aos="fade-up">
+                   <span class="section-title text-white">Contact Us</span>
+               </h2>
+               <p class="text-gray-300 mt-4 max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="100">
+                   We'd love to hear from you! Whether you have a question about our products, or want to partner with us, get in touch.
+               </p>
+           </div>
+
+            <div class="grid md:grid-cols-3 gap-8 text-center">
+                <div data-aos="fade-up" data-aos-delay="200">
+                    <h3 class="flex items-center justify-center text-xl font-bold text-secondary mb-4">
+                        <svg class="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                        Address
+                    </h3>
+                    <p class="text-gray-300">RUCHI FOODS, Kinfra park, Kalpetta Wayanad<br>Kerala, India</p>
+                </div>
+                <div data-aos="fade-up" data-aos-delay="300">
+                    <h3 class="flex items-center justify-center text-xl font-bold text-secondary mb-4">
+                        <svg class="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                        Contact
+                    </h3>
+                    <p class="text-gray-300">bflbahrain888@gmail.com</p>
+                    <p class="text-gray-300">+91 974 434 5000</p>
+                </div>
+                <div data-aos="fade-up" data-aos-delay="400">
+                    <h3 class="flex items-center justify-center text-xl font-bold text-secondary mb-4">
+                        <svg class="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.546-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        Follow Us
+                    </h3>
+                    <div class="flex justify-center space-x-6 mt-4">
+                        <a href="#" class="social-icon text-gray-300 hover:text-white">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"/>
+                            </svg>
+                        </a>
+                        <a href="https://www.instagram.com/bfl_happy_day?igsh=MWdzeHYwOThudWdpbw==" target="_blank" rel="noopener noreferrer" class="social-icon text-gray-300 hover:text-white">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-icon text-gray-300 hover:text-white">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723 10.054 10.054 0 01-3.127 1.184 4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 BFL. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Initialize AOS
+        document.addEventListener('DOMContentLoaded', function() {
+            // Check if AOS is loaded
+            if (typeof AOS !== 'undefined') {
+                console.log('AOS is loaded');
+                AOS.init({
+                    duration: 800,
+                    once: false, // Changed to false to see animations every time
+                    offset: 50,  // Reduced offset to trigger animations earlier
+                    easing: 'ease-in-out',
+                    delay: 0,
+                    mirror: true // Enable mirror effect
+                });
+            } else {
+                console.error('AOS is not loaded');
+            }
+
+            // Fade in animation for hero section
+            setTimeout(function() {
+                document.querySelector('.fade-in').style.opacity = '1';
+            }, 300);
+            
+            // Initialize product items with staggered animation
+            const productItems = document.querySelectorAll('.product-item');
+            productItems.forEach((item, index) => {
+                item.style.opacity = '0';
+                setTimeout(() => {
+                    item.style.opacity = '1';
+                }, 300 + (index * 150));
+            });
+        });
+        
+        // Product category tabs
+        const categories = document.querySelectorAll('.product-category');
+        const productGrids = document.querySelectorAll('.product-grid');
+        
+        categories.forEach(category => {
+            category.addEventListener('click', function() {
+                // Remove active class from all categories
+                categories.forEach(c => c.classList.remove('active'));
+                
+                // Add active class to clicked category
+                this.classList.add('active');
+                
+                // Hide all product grids
+                productGrids.forEach(grid => grid.classList.add('hidden'));
+                
+                // Show the selected product grid
+                const selectedGrid = document.getElementById(this.dataset.category);
+                selectedGrid.classList.remove('hidden');
+                
+                // Refresh AOS animations for the new grid
+                AOS.refresh();
+                
+                // Animate the products in the selected grid
+                const productItems = selectedGrid.querySelectorAll('.product-item');
+                productItems.forEach((item, index) => {
+                    item.style.opacity = '0';
+                    item.style.transform = 'translateY(30px)';
+                    setTimeout(() => {
+                        item.style.opacity = '1';
+                        item.style.transform = 'translateY(0)';
+                    }, 100 + (index * 150));
+                });
+            });
+        });
+        
+        // Material ripple effect for buttons
+        const buttons = document.querySelectorAll('.btn');
+        buttons.forEach(button => {
+            button.addEventListener('click', function(e) {
+                const rect = button.getBoundingClientRect();
+                const x = e.clientX - rect.left;
+                const y = e.clientY - rect.top;
+                
+                const circle = document.createElement('span');
+                circle.style.width = circle.style.height = Math.max(button.clientWidth, button.clientHeight) + 'px';
+                circle.style.left = x - (parseInt(circle.style.width) / 2) + 'px';
+                circle.style.top = y - (parseInt(circle.style.height) / 2) + 'px';
+                circle.classList.add('ripple');
+                
+                const ripple = button.getElementsByClassName('ripple')[0];
+                if (ripple) {
+                    ripple.remove();
+                }
+                
+                button.appendChild(circle);
+            });
+        });
+
+        // Add smooth scroll behavior
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                // Close mobile menu if open
+                const mobileMenu = document.getElementById('mobile-menu');
+                if (!mobileMenu.classList.contains('hidden')) {
+                    mobileMenu.classList.add('hidden');
+                }
+
+                const targetId = this.getAttribute('href');
+                
+                if (targetId === '#home') {
+                    window.scrollTo({
+                        top: 0,
+                        behavior: 'smooth'
+                    });
+                    return;
+                }
+
+                const target = document.querySelector(targetId);
+                if (target) {
+                    // Adjust for fixed header
+                    const headerOffset = document.getElementById('main-header').offsetHeight;
+                    const elementPosition = target.getBoundingClientRect().top;
+                    const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+                    window.scrollTo({
+                         top: offsetPosition,
+                         behavior: "smooth"
+                    });
+                }
+            });
+        });
+
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Header scroll effect
+        const header = document.getElementById('main-header');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+    </script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9497bbdb31832fe1',t:'MTc0ODg3NTUxOS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
