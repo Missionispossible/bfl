@@ -12,6 +12,7 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 <body>
+    <div class="site-wrapper">
     <!-- Header Section -->
     <header id="main-header" class="fixed top-0 left-0 w-full bg-white/80 backdrop-blur-sm shadow-md z-50 transition-all duration-300">
         <div class="w-full px-4 md:px-8 flex justify-between items-center py-3">
@@ -54,65 +55,7 @@
                 <a href="#products" class="primary-btn btn text-lg inline-block" data-aos="zoom-in" data-aos-delay="300">Explore Products</a>
             </div>
         </div>
-        <!-- <div class="absolute bottom-8 left-1/2 -translate-x-1/2">
-            <a href="#about" class="scroll-down-arrow">
-                <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
-            </a>
-        </div> -->
         <div class="absolute bottom-0 left-0 w-full h-16 bg-gradient-to-t from-black/50 to-transparent"></div>
-    </section>
-
-    <!-- Worldwide Branch Section -->
-    <section class="py-12 md:py-16 bg-gray-50">
-        <div class="container mx-auto px-4 md:px-8">
-            <h2 class="text-3xl md:text-4xl font-bold text-center mb-10" data-aos="fade-up">
-                <span class="section-title">Our Global Presence</span>
-            </h2>
-            <p class="text-lg text-center max-w-3xl mx-auto mb-20" data-aos="fade-up" data-aos-delay="100">With a strong commitment to bringing authentic Indian flavors to the world, BFL has established a network of offices and distribution centers. Our products are now available in over gulf regions ensuring that the rich culinary heritage of India reaches food enthusiasts worldwide.</p>
-
-            <div class="max-w-5xl mx-auto bg-white rounded-2xl shadow-xl overflow-hidden" data-aos="fade-up" data-aos-delay="200">
-                <div class="grid md:grid-cols-2">
-                    <!-- Headquarters -->
-                    <div class="p-8 md:p-12">
-                        <div class="flex items-center mb-6">
-                            <div class="flex-shrink-0">
-                                <div class="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center">
-                                     <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
-                                </div>
-                            </div>
-                            <div class="ml-5">
-                                <h3 class="text-2xl font-bold text-gray-800">Headquarters</h3>
-                                <p class="text-md text-gray-500">Main Office</p>
-                            </div>
-                        </div>
-                        <div>
-                            <p class="text-lg text-gray-700 font-medium">Kalpetta, Wayanad</p>
-                            <p class="text-gray-500">Kerala, India</p>
-                        </div>
-                    </div>
-
-                    <!-- Gulf Presence -->
-                    <div class="p-8 md:p-12 bg-gray-50/50 md:border-l border-gray-200">
-                         <div class="flex items-center mb-6">
-                            <div class="flex-shrink-0">
-                                <div class="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center">
-                                    <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2h8a2 2 0 002-2v-1a2 2 0 012-2h1.945M7.8 15.2l.5-2.8M16.2 15.2l-.5-2.8M12 22a10 10 0 100-20 10 10 0 000 20z"></path></svg>
-                                </div>
-                            </div>
-                            <div class="ml-5">
-                                <h3 class="text-2xl font-bold text-gray-800">Gulf Region</h3>
-                                <p class="text-md text-gray-500">Distribution Network</p>
-                            </div>
-                        </div>
-                        <div class="grid grid-cols-2 gap-x-6 gap-y-4">
-                            <p class="text-lg text-gray-700">Bahrain</p>
-                            <p class="text-lg text-gray-700">Saudi Arabia</p>
-                            <p class="text-lg text-gray-700">Oman</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
     </section>
 
     <!-- About Us Section -->
@@ -121,9 +64,9 @@
             <h2 class="text-3xl md:text-4xl font-bold text-center mb-16" data-aos="fade-up">
                 <span class="section-title">About BFL</span>
             </h2>
-            <div class="flex flex-col md:flex-row items-center gap-8 md:gap-16">
+            <div class="flex flex-col md:flex-row items-center gap-8 md:gap-16 mb-16">
                 <div class="w-full md:w-1/2" data-aos="fade-right" data-aos-delay="200">
-                    <img src="assets/logo/BFL Logo.png" alt="BFL Company" class="w-full max-w-md mx-auto">
+                    <img src="assets/logo/BFL Logo.png" alt="BFL Company" class="w-full max-w-sm md:max-w-md mx-auto">
                 </div>
                 <div class="w-full md:w-1/2" data-aos="fade-left" data-aos-delay="400">
                     <h3 class="text-2xl font-bold text-primary mb-4">Crafting Authentic Tastes Since 2014</h3>
@@ -133,6 +76,73 @@
                     <p class="text-lg text-gray-700 text-justify">
                         Today, we are a global brand, but our core values remain unchanged. We are committed to sourcing the finest ingredients, preserving age-old recipes, and using modern technology to ensure that every product that reaches your kitchen is pure, fresh, and full of flavor.
                     </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Worldwide Branch Section -->
+    <section class="py-12 md:py-16 bg-gray-50">
+        <div class="container mx-auto px-4 md:px-8">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-10">
+                <span class="section-title">Our Global Presence</span>
+            </h2>
+            <p class="text-lg text-center max-w-3xl mx-auto mb-12">
+                With a strong commitment to bringing authentic Indian flavors to the world, BFL has established a network of offices and distribution centers. Our products are now available in several Gulf countries, ensuring that the rich culinary heritage of India reaches food enthusiasts worldwide.
+            </p>
+    
+            <div class="max-w-5xl mx-auto bg-white rounded-2xl shadow-xl">
+                <div class="grid md:grid-cols-2">
+                    <!-- Headquarters -->
+                    <div class="p-8 md:p-12" data-aos="fade-right">
+                        <div class="flex items-center mb-6">
+                            <div class="flex-shrink-0">
+                                <div class="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center">
+                                    <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                              d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                              d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="ml-5">
+                                <h3 class="text-2xl font-bold text-gray-800">Headquarters</h3>
+                                <p class="text-md text-gray-500">Main Office</p>
+                            </div>
+                        </div>
+                        <div>
+                            <p class="text-lg text-gray-700 font-medium">Kalpetta</p>
+                            <p class="text-gray-500">Wayanad, Kerala</p>
+                        </div>
+                    </div>
+    
+                    <!-- Gulf Presence -->
+                    <div class="p-8 md:p-12 bg-gray-50/50 md:border-l border-gray-200" data-aos="fade-left">
+                        <div class="flex items-center mb-6">
+                            <div class="flex-shrink-0">
+                                <div class="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center">
+                                    <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor"
+                                         viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+                                         stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <circle cx="12" cy="12" r="10"></circle>
+                                        <line x1="2" y1="12" x2="22" y2="12"></line>
+                                        <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="ml-5">
+                                <h3 class="text-2xl font-bold text-gray-800">Our Branches</h3>
+                                <p class="text-md text-gray-500">Distribution Network</p>
+                            </div>
+                        </div>
+                        <div class="grid grid-cols-2 gap-x-6 gap-y-4">
+                            <p class="text-lg text-gray-700">Bahrain</p>
+                            <p class="text-lg text-gray-700">Saudi Arabia</p>
+                            <p class="text-lg text-gray-700">Oman</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -593,5 +603,7 @@
             }
         });
     </script>
-<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9497bbdb31832fe1',t:'MTc0ODg3NTUxOS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9497bbdb31832fe1',t:'MTc0ODg3NTUxOS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script>
+</div>
+</body>
 </html>
