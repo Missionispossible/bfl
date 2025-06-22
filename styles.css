@@ -403,6 +403,13 @@ section {
     }
 }
 
+@media (max-width: 500px) {
+    .product-category {
+        font-size: 0.95rem !important;
+        text-align: center;
+    }
+}
+
 @keyframes fadeInUp {
     from {
         opacity: 0;
